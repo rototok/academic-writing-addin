@@ -15,9 +15,9 @@
   <DisplayName DefaultValue="Academic Writing Assistant"/>
   <Description DefaultValue="IMRD sentence template library for academic writing"/>
 
-  <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-64.png"/>
-  <SupportUrl DefaultValue="https://localhost:3000"/>
+  <IconUrl DefaultValue="https://rototok.github.io/academic-writing-addin/assets/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://rototok.github.io/academic-writing-addin/assets/icon-64.png"/>
+  <SupportUrl DefaultValue="https://rototok.github.io/academic-writing-addin"/>
 
   <!-- Минимальная версия Office JS API -->
   <Requirements>
@@ -31,7 +31,7 @@
   </Hosts>
 
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://localhost:3000/taskpane.html"/>
+    <SourceLocation DefaultValue="https://rototok.github.io/academic-writing-addin/taskpane.html"/>
   </DefaultSettings>
 
   <!-- Разрешения: ReadWriteDocument нужно для вставки текста -->
@@ -78,13 +78,13 @@
 
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://localhost:3000/assets/icon-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://localhost:3000/assets/icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://localhost:3000/assets/icon-80.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://rototok.github.io/academic-writing-addin/assets/icon-16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://rototok.github.io/academic-writing-addin/assets/icon-32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://rototok.github.io/academic-writing-addin/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Commands.Url"  DefaultValue="https://localhost:3000/commands.html"/>
-        <bt:Url id="Taskpane.Url"  DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="Commands.Url"  DefaultValue="https://rototok.github.io/academic-writing-addin/commands.html"/>
+        <bt:Url id="Taskpane.Url"  DefaultValue="https://rototok.github.io/academic-writing-addin/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GroupLabel"             DefaultValue="Writing Templates"/>
