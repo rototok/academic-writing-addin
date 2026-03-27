@@ -6,10 +6,9 @@
   xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
   xsi:type="TaskPaneApp">
 
-  <!-- Уникальный ID надстройки. Сгенерируйте свой на https://www.guidgenerator.com -->
-  <Id>a1b2c3d4-e5f6-7890-abcd-ef1234567890</Id>
+  <Id>7f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c</Id>
   <Version>1.0.0.0</Version>
-  <ProviderName>Your Name</ProviderName>
+  <ProviderName>Academic Writing Assistant</ProviderName>
 
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Academic Writing Assistant"/>
@@ -19,7 +18,10 @@
   <HighResolutionIconUrl DefaultValue="https://rototok.github.io/academic-writing-addin/assets/icon-64.png"/>
   <SupportUrl DefaultValue="https://rototok.github.io/academic-writing-addin"/>
 
-  <!-- Минимальная версия Office JS API -->
+  <AppDomains>
+    <AppDomain>https://rototok.github.io</AppDomain>
+  </AppDomains>
+
   <Requirements>
     <Sets DefaultMinVersion="1.1">
       <Set Name="WordApi" MinVersion="1.1"/>
@@ -34,10 +36,9 @@
     <SourceLocation DefaultValue="https://rototok.github.io/academic-writing-addin/taskpane.html"/>
   </DefaultSettings>
 
-  <!-- Разрешения: ReadWriteDocument нужно для вставки текста -->
   <Permissions>ReadWriteDocument</Permissions>
 
-  <!-- ── Ribbon кнопка ── -->
+  <!-- ИСПРАВЛЕНИЕ 3: правильный namespace для VersionOverrides -->
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
                     xsi:type="VersionOverridesV1_0">
     <Hosts>
@@ -83,12 +84,12 @@
         <bt:Image id="Icon.80x80" DefaultValue="https://rototok.github.io/academic-writing-addin/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Commands.Url"  DefaultValue="https://rototok.github.io/academic-writing-addin/commands.html"/>
-        <bt:Url id="Taskpane.Url"  DefaultValue="https://rototok.github.io/academic-writing-addin/taskpane.html"/>
+        <bt:Url id="Commands.Url" DefaultValue="https://rototok.github.io/academic-writing-addin/commands.html"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://rototok.github.io/academic-writing-addin/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
-        <bt:String id="GroupLabel"             DefaultValue="Writing Templates"/>
-        <bt:String id="TaskpaneButton.Label"   DefaultValue="Open Assistant"/>
+        <bt:String id="GroupLabel"           DefaultValue="Writing Templates"/>
+        <bt:String id="TaskpaneButton.Label" DefaultValue="Open Assistant"/>
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Open the IMRD Academic Writing template panel"/>
