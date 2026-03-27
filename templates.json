@@ -1,0 +1,252 @@
+[
+  {
+    "name": "Introduction",
+    "color": "#2E86AB",
+    "categories": [
+      {
+        "name": "Background & Context",
+        "icon": "🌍",
+        "templates": [
+          { "id": "I-BG-01", "description": "General background", "text": "[Topic] is a well-established field that has gained significant attention over the past [X] decades." },
+          { "id": "I-BG-02", "description": "Recent emergence",   "text": "In recent years, [topic] has emerged as a critical area of research due to [reason]." },
+          { "id": "I-BG-03", "description": "Growing interest",   "text": "The growing interest in [topic] reflects its importance in [broader context]." },
+          { "id": "I-BG-04", "description": "Fundamental role",   "text": "[Topic] plays a fundamental role in [field/application], influencing [outcome]." },
+          { "id": "I-BG-05", "description": "Research progress",  "text": "Over the last [X] years, substantial progress has been made in understanding [topic]." }
+        ]
+      },
+      {
+        "name": "Problem Statement",
+        "icon": "⚠️",
+        "templates": [
+          { "id": "I-PS-01", "description": "Knowledge gap",       "text": "However, despite extensive research, [specific problem] remains poorly understood." },
+          { "id": "I-PS-02", "description": "Major challenge",     "text": "A major challenge in [field] is the lack of [missing element], which limits our ability to [outcome]." },
+          { "id": "I-PS-03", "description": "Unexplored topic",    "text": "To date, no study has systematically examined [topic/relationship]." },
+          { "id": "I-PS-04", "description": "Literature gap",      "text": "Existing studies have largely overlooked [aspect], leaving a significant gap in the literature." },
+          { "id": "I-PS-05", "description": "Mechanistic gap",     "text": "The mechanisms underlying [phenomenon] are not yet fully elucidated." },
+          { "id": "I-PS-06", "description": "Conflicting findings","text": "Previous research has produced conflicting results regarding [topic], highlighting the need for further investigation." }
+        ]
+      },
+      {
+        "name": "Literature Review",
+        "icon": "📚",
+        "templates": [
+          { "id": "I-LR-01", "description": "Evidence summary",   "text": "Several studies have demonstrated that [finding] [refs]." },
+          { "id": "I-LR-02", "description": "Single study",       "text": "[Author] et al. ([Year]) reported that [finding], suggesting [implication]." },
+          { "id": "I-LR-03", "description": "Body of evidence",   "text": "A growing body of evidence indicates that [trend/finding]." },
+          { "id": "I-LR-04", "description": "Correlation",        "text": "Previous work has shown a positive/negative correlation between [X] and [Y]." },
+          { "id": "I-LR-05", "description": "Review reference",   "text": "Systematic reviews have consistently shown that [finding]." },
+          { "id": "I-LR-06", "description": "Contrasting studies","text": "While [Author A] ([Year]) found [result A], [Author B] ([Year]) reported [result B], indicating [interpretation]." }
+        ]
+      },
+      {
+        "name": "Research Objectives",
+        "icon": "🎯",
+        "templates": [
+          { "id": "I-RO-01", "description": "General aim",         "text": "The aim of this study was to investigate [topic/question]." },
+          { "id": "I-RO-02", "description": "Hypothesis testing",  "text": "This study sought to determine whether [hypothesis/question]." },
+          { "id": "I-RO-03", "description": "Primary + secondary", "text": "The primary objective of this research was to [objective 1], and secondarily to [objective 2]." },
+          { "id": "I-RO-04", "description": "Hypothesis",          "text": "We hypothesized that [X] would [effect] [Y] under [conditions]." },
+          { "id": "I-RO-05", "description": "Research questions",  "text": "Specifically, we addressed the following research questions: (1) [question 1]; (2) [question 2]." }
+        ]
+      },
+      {
+        "name": "Novelty & Significance",
+        "icon": "✨",
+        "templates": [
+          { "id": "I-NS-01", "description": "First study",    "text": "To the best of our knowledge, this is the first study to [novel contribution]." },
+          { "id": "I-NS-02", "description": "Implications",   "text": "The findings of this study may have important implications for [field/practice]." },
+          { "id": "I-NS-03", "description": "Advance",        "text": "This work represents a significant advance in [area] by [how]." },
+          { "id": "I-NS-04", "description": "Importance",     "text": "Understanding [topic] is crucial for [application/outcome]." }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Methods",
+    "color": "#A23B72",
+    "categories": [
+      {
+        "name": "Study Design",
+        "icon": "🔬",
+        "templates": [
+          { "id": "M-SD-01", "description": "Design type",      "text": "This study employed a [cross-sectional/longitudinal/retrospective/prospective] design." },
+          { "id": "M-SD-02", "description": "RCT",              "text": "A randomized controlled trial (RCT) was conducted to evaluate [intervention]." },
+          { "id": "M-SD-03", "description": "Research approach","text": "We used a [qualitative/quantitative/mixed-methods] approach to [aim]." },
+          { "id": "M-SD-04", "description": "Ethics approval",  "text": "The study protocol was approved by the Ethics Committee of [Institution] (approval no. [X])." },
+          { "id": "M-SD-05", "description": "Informed consent", "text": "All participants provided written informed consent prior to enrollment." }
+        ]
+      },
+      {
+        "name": "Participants & Sampling",
+        "icon": "👥",
+        "templates": [
+          { "id": "M-PA-01", "description": "Sample size",       "text": "A total of [N] [participants/subjects/samples] were included in this study." },
+          { "id": "M-PA-02", "description": "Recruitment",       "text": "Participants were recruited from [setting] between [date] and [date]." },
+          { "id": "M-PA-03", "description": "Inclusion criteria","text": "Inclusion criteria were: (1) [criterion 1]; (2) [criterion 2]; (3) [criterion 3]." },
+          { "id": "M-PA-04", "description": "Exclusion criteria","text": "Exclusion criteria included [criterion 1] and [criterion 2]." },
+          { "id": "M-PA-05", "description": "Random assignment", "text": "Participants were randomly assigned to the experimental (n = [X]) or control group (n = [X])." },
+          { "id": "M-PA-06", "description": "Sample size calc",  "text": "The sample size was calculated based on [effect size], power [X]%, alpha [X]." }
+        ]
+      },
+      {
+        "name": "Statistical Analysis",
+        "icon": "📈",
+        "templates": [
+          { "id": "M-SA-01", "description": "Software",              "text": "Statistical analyses were performed using [Software] (version [X]; [Company, Country])." },
+          { "id": "M-SA-02", "description": "Descriptive stats",     "text": "Descriptive statistics are presented as mean ± SD for continuous variables and as frequencies (%) for categorical variables." },
+          { "id": "M-SA-03", "description": "Group comparison",      "text": "Group differences were assessed using [t-test/Mann–Whitney U/ANOVA] for continuous and [chi-square/Fisher's] for categorical variables." },
+          { "id": "M-SA-04", "description": "Regression",            "text": "A [multivariate/logistic/linear] regression model was constructed to identify independent predictors of [outcome]." },
+          { "id": "M-SA-05", "description": "Significance threshold","text": "Statistical significance was set at p < 0.05 (two-tailed)." },
+          { "id": "M-SA-06", "description": "Normality test",        "text": "Normality of data distribution was assessed using the Shapiro–Wilk test." },
+          { "id": "M-SA-07", "description": "Correlation",           "text": "Correlation between variables was assessed using Pearson's/Spearman's correlation coefficient." },
+          { "id": "M-SA-08", "description": "Missing data",          "text": "Missing data were handled using [listwise deletion/multiple imputation]." }
+        ]
+      },
+      {
+        "name": "Procedures & Intervention",
+        "icon": "⚙️",
+        "templates": [
+          { "id": "M-PR-01", "description": "Intervention",    "text": "The intervention consisted of [description] administered [frequency] for [duration]." },
+          { "id": "M-PR-02", "description": "Standards",       "text": "All procedures were performed in accordance with [guidelines/standards]." },
+          { "id": "M-PR-03", "description": "Sample processing","text": "Samples were processed within [X] hours of collection to minimize degradation." },
+          { "id": "M-PR-04", "description": "Pre-processing",  "text": "Prior to analysis, data were pre-processed by [step 1], [step 2], and [step 3]." }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Results",
+    "color": "#F18F01",
+    "categories": [
+      {
+        "name": "Descriptive Results",
+        "icon": "📋",
+        "templates": [
+          { "id": "R-DR-01", "description": "Table reference",       "text": "The baseline characteristics of the study population are summarized in Table [X]." },
+          { "id": "R-DR-02", "description": "Inclusion flow",        "text": "Of the [N] [participants/samples] enrolled, [N] ([X]%) were included in the final analysis." },
+          { "id": "R-DR-03", "description": "Mean ± SD",             "text": "The mean [variable] was [X] ± [SD] (range: [min]–[max])." },
+          { "id": "R-DR-04", "description": "Baseline comparability","text": "The demographic characteristics of both groups were comparable at baseline (Table [X])." },
+          { "id": "R-DR-05", "description": "Figure reference",      "text": "As shown in Figure [X], [description of figure]." }
+        ]
+      },
+      {
+        "name": "Comparisons & Differences",
+        "icon": "⚖️",
+        "templates": [
+          { "id": "R-CD-01", "description": "Group comparison",  "text": "[Group A] showed significantly higher/lower [variable] compared to [Group B] ([X] vs. [X]; p = [X])." },
+          { "id": "R-CD-02", "description": "Null difference",   "text": "No significant difference was observed between [Group A] and [Group B] for [variable] (p = [X])." },
+          { "id": "R-CD-03", "description": "Improvement",       "text": "The experimental group demonstrated a [X]% improvement in [outcome] vs. the control group (p < [X])." },
+          { "id": "R-CD-04", "description": "Significant diff",  "text": "[Variable] was significantly higher in [group/condition] than in [group/condition] (p < 0.05)." },
+          { "id": "R-CD-05", "description": "Post-hoc",          "text": "Post-hoc analysis revealed significant differences between [Group A] and [Group B] (p = [X]), but not [Group B] vs. [Group C] (p = [X])." }
+        ]
+      },
+      {
+        "name": "Trends & Patterns",
+        "icon": "📉",
+        "templates": [
+          { "id": "R-TP-01", "description": "Progressive trend", "text": "[Variable] increased/decreased progressively over the [X]-[unit] study period." },
+          { "id": "R-TP-02", "description": "Correlation result","text": "A positive/negative correlation was found between [X] and [Y] (r = [X], p = [X])." },
+          { "id": "R-TP-03", "description": "Prevalence change", "text": "The prevalence of [outcome] increased/decreased from [X]% to [X]% over the study period." },
+          { "id": "R-TP-04", "description": "Peak pattern",      "text": "[Variable] peaked at [timepoint/value] and subsequently declined." },
+          { "id": "R-TP-05", "description": "Consistent pattern","text": "Overall, results showed a consistent pattern of [trend] across all [subgroups/conditions]." }
+        ]
+      },
+      {
+        "name": "Statistical Findings",
+        "icon": "🔢",
+        "templates": [
+          { "id": "R-SF-01", "description": "Multivariate predictor","text": "Multivariate analysis identified [variable] as an independent predictor of [outcome] (OR = [X], 95% CI [X]–[X]; p = [X])." },
+          { "id": "R-SF-02", "description": "ROC / AUC",             "text": "The AUC for [variable] was [X] (95% CI: [X]–[X])." },
+          { "id": "R-SF-03", "description": "Regression",            "text": "Regression analysis revealed that [X] significantly predicted [Y] (β = [X], SE = [X], p = [X])." },
+          { "id": "R-SF-04", "description": "Survival analysis",     "text": "Kaplan–Meier analysis demonstrated significantly better/worse [outcome] in [Group A] vs. [Group B] (log-rank p = [X])." },
+          { "id": "R-SF-05", "description": "Adjusted association",  "text": "After adjusting for [confounders], the association between [X] and [Y] remained significant (p = [X])." }
+        ]
+      },
+      {
+        "name": "Subgroup Analyses",
+        "icon": "🔍",
+        "templates": [
+          { "id": "R-SG-01", "description": "Subgroup finding",  "text": "Subgroup analysis stratified by [variable] showed that [finding] was more pronounced in [subgroup]." },
+          { "id": "R-SG-02", "description": "Sensitivity analysis","text": "Sensitivity analysis excluding [specific cases] yielded consistent results." },
+          { "id": "R-SG-03", "description": "Consistent effect", "text": "The effect of [intervention] was consistent across all pre-specified subgroups (p for interaction = [X])." }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Discussion",
+    "color": "#C73E1D",
+    "categories": [
+      {
+        "name": "Summary of Findings",
+        "icon": "📝",
+        "templates": [
+          { "id": "D-SF-01", "description": "Principal finding",    "text": "The principal finding of this study was that [main finding]." },
+          { "id": "D-SF-02", "description": "Confirmed hypothesis", "text": "In the present study, we demonstrated that [finding], consistent with our hypothesis." },
+          { "id": "D-SF-03", "description": "Multiple findings",    "text": "Our results revealed that [finding A] and [finding B], suggesting [interpretation]." },
+          { "id": "D-SF-04", "description": "Unexpected finding",   "text": "Contrary to our expectations, [unexpected finding], which may be explained by [explanation]." },
+          { "id": "D-SF-05", "description": "Evidence",             "text": "This study provides evidence that [conclusion], extending previous findings in [field]." }
+        ]
+      },
+      {
+        "name": "Comparison with Literature",
+        "icon": "🔄",
+        "templates": [
+          { "id": "D-CL-01", "description": "Consistent",           "text": "These findings are in line with those of [Author] et al. ([Year]), who reported [similar finding]." },
+          { "id": "D-CL-02", "description": "Consistent with type", "text": "Our results are consistent with [study type] studies showing that [finding]." },
+          { "id": "D-CL-03", "description": "Inconsistent",         "text": "In contrast to [Author] et al. ([Year]), we found [different finding]. This discrepancy may be attributable to [reason]." },
+          { "id": "D-CL-04", "description": "Corroboration",        "text": "Our findings corroborate the growing body of evidence suggesting that [trend/finding]." },
+          { "id": "D-CL-05", "description": "Novelty claim",        "text": "To the best of our knowledge, this is the first study to demonstrate [finding] in [population/context]." },
+          { "id": "D-CL-06", "description": "Effect size comparison","text": "The effect size observed here was larger/smaller than that reported by [Author] et al. ([Year])." }
+        ]
+      },
+      {
+        "name": "Interpretation & Mechanisms",
+        "icon": "💡",
+        "templates": [
+          { "id": "D-IM-01", "description": "Possible explanation","text": "One possible explanation for this finding is that [mechanism/reason]." },
+          { "id": "D-IM-02", "description": "Mechanistic",         "text": "The observed association between [X] and [Y] may reflect [underlying mechanism]." },
+          { "id": "D-IM-03", "description": "Role suggestion",     "text": "This finding suggests that [X] may play a key role in [process/outcome]." },
+          { "id": "D-IM-04", "description": "Mediation",           "text": "The relationship between [X] and [Y] could be mediated by [mediator], as [rationale]." },
+          { "id": "D-IM-05", "description": "Synthesis",           "text": "Taken together, these findings suggest that [conclusion]." },
+          { "id": "D-IM-06", "description": "Theoretical framing", "text": "This pattern can be interpreted within [theory/framework], which postulates that [principle]." }
+        ]
+      },
+      {
+        "name": "Implications",
+        "icon": "🏥",
+        "templates": [
+          { "id": "D-IP-01", "description": "General implications","text": "These findings have important implications for [clinical practice/policy/future research]." },
+          { "id": "D-IP-02", "description": "Clinical",            "text": "From a clinical perspective, our results suggest that [recommendation]." },
+          { "id": "D-IP-03", "description": "Implementation",      "text": "These data support the implementation of [intervention/strategy] in [setting/population]." },
+          { "id": "D-IP-04", "description": "Importance",          "text": "Our findings underscore the importance of [factor] in [context]." },
+          { "id": "D-IP-05", "description": "Practical application","text": "The results may inform the development of [guidelines/interventions/tools]." }
+        ]
+      },
+      {
+        "name": "Limitations",
+        "icon": "⚠️",
+        "templates": [
+          { "id": "D-LM-01", "description": "Opener",           "text": "This study has several limitations that should be acknowledged." },
+          { "id": "D-LM-02", "description": "Causal inference", "text": "First, the cross-sectional design precludes causal inferences." },
+          { "id": "D-LM-03", "description": "Sample size",      "text": "Second, the relatively small sample size may have limited statistical power to detect [effect]." },
+          { "id": "D-LM-04", "description": "Self-report bias", "text": "Third, reliance on self-reported data may have introduced recall or social-desirability bias." },
+          { "id": "D-LM-05", "description": "Generalizability", "text": "The generalizability of our findings may be limited due to [reason]." },
+          { "id": "D-LM-06", "description": "Strengths",        "text": "Despite these limitations, the strengths of this study include [strength 1] and [strength 2]." }
+        ]
+      },
+      {
+        "name": "Conclusions",
+        "icon": "🏁",
+        "templates": [
+          { "id": "D-CO-01", "description": "Main conclusion",     "text": "In conclusion, the present study demonstrates that [main conclusion]." },
+          { "id": "D-CO-02", "description": "Implication-linked",  "text": "Our findings suggest that [conclusion], with important implications for [field]." },
+          { "id": "D-CO-03", "description": "Contribution",        "text": "These results contribute to a better understanding of [topic] and highlight the need for [future direction]." },
+          { "id": "D-CO-04", "description": "Future research",     "text": "Further research is warranted to [future direction], particularly in [specific area]." },
+          { "id": "D-CO-05", "description": "Replication call",    "text": "Larger, prospective studies are needed to confirm these preliminary findings." },
+          { "id": "D-CO-06", "description": "Address limitations", "text": "Future investigations should address [limitation] to provide more definitive conclusions." }
+        ]
+      }
+    ]
+  }
+]
