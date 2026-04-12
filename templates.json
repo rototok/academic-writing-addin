@@ -1,6 +1,7 @@
 [
   {
     "name": "Abstract",
+    "color": "#2E86AB",
     "categories": [
       {
         "name": "Introducing method",
@@ -829,6 +830,7 @@
   },
   {
     "name": "Conclusion",
+    "color": "#2E86AB",
     "categories": [
       {
         "name": "Future research",
@@ -1503,6 +1505,7 @@
   },
   {
     "name": "Connectors",
+    "color": "#2E86AB",
     "categories": [
       {
         "name": "Addition",
@@ -1683,6 +1686,7 @@
   },
   {
     "name": "Discussion",
+    "color": "#2E86AB",
     "categories": [
       {
         "name": "Highlighting results",
@@ -2056,6 +2060,7 @@
   },
   {
     "name": "Introduction",
+    "color": "#2E86AB",
     "categories": [
       {
         "name": "Paper structure",
@@ -2578,6 +2583,7 @@
   },
   {
     "name": "Literature",
+    "color": "#2E86AB",
     "categories": [
       {
         "name": "Author quotes",
@@ -3572,6 +3578,7 @@
   },
   {
     "name": "Methods",
+    "color": "#2E86AB",
     "categories": [
       {
         "name": "Analysis",
@@ -4119,6 +4126,7 @@
   },
   {
     "name": "Results",
+    "color": "#2E86AB",
     "categories": [
       {
         "name": "Interesting results",
@@ -4751,6 +4759,7 @@
   },
   {
     "name": "Statements",
+    "color": "#2E86AB",
     "categories": [
       {
         "name": "Acknowledgements",
