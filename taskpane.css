@@ -1,9 +1,11 @@
-/* ── Reset & Base ───────────────────────────────────────── */
+/* ── Reset & Base ───────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
   font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
-  font-size: 13px;
+
+  font-size: 15px;
+
   background: #f8f9fc;
   color: #202636;
   display: flex;
@@ -12,25 +14,29 @@ body {
   overflow: hidden;
 }
 
-/* ── Header ─────────────────────────────────────────────── */
+/* ── Header ─────────────────────────────────────────────────── */
 .header {
   background: #161b2e;
-  padding: 10px 14px 10px;
+  padding: 10px 14px;
   flex-shrink: 0;
 }
+
+/* Название надстройки. Было: 13.5px → стало: 15.5px */
 .header-title {
   color: #fff;
-  font-size: 13.5px;
+  font-size: 15.5px;
   font-weight: 700;
   letter-spacing: 0.01em;
 }
+
+/* Подзаголовок шапки. Было: 11px → стало: 13px */
 .header-sub {
   color: #96a8c8;
-  font-size: 11px;
+  font-size: 13px;
   margin-top: 3px;
 }
 
-/* ── Section bar ────────────────────────────────────────── */
+/* ── Section bar (кнопки разделов) ─────────────────────────── */
 .section-bar {
   display: flex;
   flex-wrap: nowrap;
@@ -44,13 +50,14 @@ body {
 .section-bar::-webkit-scrollbar { height: 3px; }
 .section-bar::-webkit-scrollbar-thumb { background: #c0cad8; border-radius: 2px; }
 
+/* Кнопки разделов (Introduction, Methods...). Было: 12px → стало: 14px */
 .btn-section {
-  padding: 4px 12px;
+  padding: 5px 13px;
   border-radius: 4px;
   border: 1px solid #dae0ea;
   background: #fff;
   color: #202636;
-  font-size: 12px;
+  font-size: 14px;
   cursor: pointer;
   white-space: nowrap;
   transition: background 0.15s, color 0.15s, border-color 0.15s;
@@ -61,7 +68,7 @@ body {
   border-color: transparent;
 }
 
-/* ── Search ─────────────────────────────────────────────── */
+/* ── Search ─────────────────────────────────────────────────── */
 .search-bar {
   display: flex;
   align-items: center;
@@ -71,18 +78,20 @@ body {
   border-bottom: 1px solid #dae0ea;
   flex-shrink: 0;
 }
-.search-icon { font-size: 13px; color: #7c8494; }
+.search-icon { font-size: 14px; color: #7c8494; }
+
+/* Поле поиска. Было: 13px → стало: 15px */
 #searchInput {
   flex: 1;
   border: none;
   outline: none;
-  font-size: 13px;
+  font-size: 15px;
   color: #202636;
   background: transparent;
 }
 #searchInput::placeholder { color: #a0aab8; }
 
-/* ── Content area ───────────────────────────────────────── */
+/* ── Content area ───────────────────────────────────────────── */
 .content-area {
   flex: 1;
   display: flex;
@@ -91,15 +100,16 @@ body {
   background: #fff;
 }
 
+/* Название активного раздела над вкладками. Было: 13px → стало: 15px */
 .section-label {
   padding: 6px 14px 4px;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 15px;
   background: #fff;
   flex-shrink: 0;
 }
 
-/* ── Tabs ───────────────────────────────────────────────── */
+/* ── Tabs (вкладки категорий) ───────────────────────────────── */
 .tabs-header {
   display: flex;
   overflow-x: auto;
@@ -110,9 +120,10 @@ body {
 .tabs-header::-webkit-scrollbar { height: 3px; }
 .tabs-header::-webkit-scrollbar-thumb { background: #c0cad8; border-radius: 2px; }
 
+/* Кнопки вкладок категорий. Было: 11.5px → стало: 13.5px */
 .tab-btn {
-  padding: 7px 12px;
-  font-size: 11.5px;
+  padding: 8px 13px;
+  font-size: 13.5px;
   border: none;
   background: #f3f6fc;
   color: #7c8494;
@@ -128,7 +139,7 @@ body {
   font-weight: 600;
 }
 
-/* ── Cards scroll area ──────────────────────────────────── */
+/* ── Cards scroll area ──────────────────────────────────────── */
 .tabs-body {
   flex: 1;
   overflow-y: auto;
@@ -137,71 +148,40 @@ body {
 .tabs-body::-webkit-scrollbar { width: 5px; }
 .tabs-body::-webkit-scrollbar-thumb { background: #c0cad8; border-radius: 3px; }
 
-/* ── Template card ──────────────────────────────────────── */
+/* ── Template card ──────────────────────────────────────────── */
+/* Карточка кликабельна целиком — кнопки Insert больше нет */
 .card {
   background: #fff;
   border: 1px solid #dae0ea;
   border-radius: 6px;
-  padding: 10px 10px 8px 14px;
+  padding: 10px 12px;        /* убран нижний отступ под кнопку */
   margin-bottom: 8px;
   cursor: pointer;
   position: relative;
   transition: background 0.12s;
-}
-.card::before {
-  content: '';
-  position: absolute;
-  left: 0; top: 0; bottom: 0;
-  width: 3px;
-  border-radius: 6px 0 0 6px;
+  user-select: none;          /* текст не выделяется при клике */
 }
 .card:hover { background: #eef3ff; }
 
-.card-badge {
-  display: inline-block;
-  font-size: 10.5px;
-  padding: 1px 6px;
-  border-radius: 3px;
-  margin-bottom: 5px;
-  font-weight: 500;
-}
-
+/* Текст шаблона. Было: 12.5px → стало: 14.5px */
 .card-text {
-  font-size: 12.5px;
-  line-height: 1.5;
+  font-size: 14.5px;
+  line-height: 1.55;
   color: #202636;
-  margin-bottom: 8px;
 }
 
-.card-footer {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.btn-insert {
-  padding: 3px 12px;
-  font-size: 11.5px;
-  font-weight: 600;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: filter 0.15s;
-}
-.btn-insert:hover { filter: brightness(0.88); }
-
-/* ── Empty state ────────────────────────────────────────── */
+/* ── Empty state ────────────────────────────────────────────── */
 .empty-msg {
   color: #a0aab8;
   font-style: italic;
-  font-size: 12px;
+  font-size: 13px;            /* было 12px */
   padding: 16px 8px;
 }
 
-/* ── Status bar ─────────────────────────────────────────── */
+/* ── Status bar ─────────────────────────────────────────────── */
 .status-bar {
   padding: 5px 14px;
-  font-size: 11px;
+  font-size: 12px;            /* было 11px */
   color: #7c8494;
   background: #eef1f8;
   border-top: 1px solid #dae0ea;
@@ -210,5 +190,5 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.status-bar.error { color: #b43030; }
+.status-bar.error   { color: #b43030; }
 .status-bar.success { color: #1a7a3a; }
