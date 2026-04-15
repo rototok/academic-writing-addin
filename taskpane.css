@@ -67,7 +67,7 @@ body {
   border: 1px solid rgba(255,255,255,0.25);
   border-radius: 4px;
   background: rgba(255,255,255,0.1);
-  color: #fff;
+  color: #202636;
   font-size: 13px;
   font-weight: 700;
   cursor: pointer;
@@ -82,7 +82,7 @@ body {
 }
 
 #fontSizeLabel {
-  color: rgba(255,255,255,0.65);
+  color: #202636;
   font-size: 11px;
   min-width: 30px;
   text-align: center;
