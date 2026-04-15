@@ -1,11 +1,15 @@
 /* ── Reset & Base ───────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+/*
+ * РАЗМЕР ШРИФТА управляется через JavaScript —
+ * он меняет font-size на элементе <body>.
+ * Все остальные размеры наследуются отсюда автоматически.
+ * Значение по умолчанию: 15px (задаётся в taskpane.js)
+ */
 body {
   font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
-
-  font-size: 15px;
-
+  font-size: 15px;   /* ← JS перезаписывает это значение */
   background: #f8f9fc;
   color: #202636;
   display: flex;
@@ -21,22 +25,70 @@ body {
   flex-shrink: 0;
 }
 
-/* Название надстройки. Было: 13.5px → стало: 15.5px */
-.header-title {
-  color: #fff;
-  font-size: 15.5px;
-  font-weight: 700;
-  letter-spacing: 0.01em;
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
 }
 
-/* Подзаголовок шапки. Было: 11px → стало: 13px */
+.header-titles {
+  flex: 1;
+  min-width: 0;
+}
+
+.header-title {
+  color: #fff;
+  font-size: 1.03em;    /* масштабируется вместе с body */
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .header-sub {
   color: #96a8c8;
-  font-size: 13px;
+  font-size: 0.87em;    /* масштабируется вместе с body */
   margin-top: 3px;
 }
 
-/* ── Section bar (кнопки разделов) ─────────────────────────── */
+/* ── Font size controls ─────────────────────────────────────── */
+.font-size-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.font-size-controls button {
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 4px;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+  line-height: 1;
+}
+.font-size-controls button:hover  { background: rgba(255,255,255,0.22); }
+.font-size-controls button:active { background: rgba(255,255,255,0.35); }
+.font-size-controls button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+#fontSizeLabel {
+  color: rgba(255,255,255,0.65);
+  font-size: 11px;
+  min-width: 30px;
+  text-align: center;
+}
+
+/* ── Section bar ────────────────────────────────────────────── */
 .section-bar {
   display: flex;
   flex-wrap: nowrap;
@@ -50,23 +102,19 @@ body {
 .section-bar::-webkit-scrollbar { height: 3px; }
 .section-bar::-webkit-scrollbar-thumb { background: #c0cad8; border-radius: 2px; }
 
-/* Кнопки разделов (Introduction, Methods...). Было: 12px → стало: 14px */
 .btn-section {
   padding: 5px 13px;
   border-radius: 4px;
   border: 1px solid #dae0ea;
   background: #fff;
   color: #202636;
-  font-size: 14px;
+  font-size: 0.93em;    /* масштабируется вместе с body */
   cursor: pointer;
   white-space: nowrap;
   transition: background 0.15s, color 0.15s, border-color 0.15s;
 }
 .btn-section:hover { background: #eef3ff; }
-.btn-section.active {
-  color: #fff;
-  border-color: transparent;
-}
+.btn-section.active { color: #fff; border-color: transparent; }
 
 /* ── Search ─────────────────────────────────────────────────── */
 .search-bar {
@@ -78,14 +126,13 @@ body {
   border-bottom: 1px solid #dae0ea;
   flex-shrink: 0;
 }
-.search-icon { font-size: 14px; color: #7c8494; }
+.search-icon { font-size: 0.93em; color: #7c8494; }
 
-/* Поле поиска. Было: 13px → стало: 15px */
 #searchInput {
   flex: 1;
   border: none;
   outline: none;
-  font-size: 15px;
+  font-size: 1em;       /* масштабируется вместе с body */
   color: #202636;
   background: transparent;
 }
@@ -100,16 +147,15 @@ body {
   background: #fff;
 }
 
-/* Название активного раздела над вкладками. Было: 13px → стало: 15px */
 .section-label {
   padding: 6px 14px 4px;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 1em;       /* масштабируется вместе с body */
   background: #fff;
   flex-shrink: 0;
 }
 
-/* ── Tabs (вкладки категорий) ───────────────────────────────── */
+/* ── Tabs ───────────────────────────────────────────────────── */
 .tabs-header {
   display: flex;
   overflow-x: auto;
@@ -120,10 +166,9 @@ body {
 .tabs-header::-webkit-scrollbar { height: 3px; }
 .tabs-header::-webkit-scrollbar-thumb { background: #c0cad8; border-radius: 2px; }
 
-/* Кнопки вкладок категорий. Было: 11.5px → стало: 13.5px */
 .tab-btn {
   padding: 8px 13px;
-  font-size: 13.5px;
+  font-size: 0.9em;     /* масштабируется вместе с body */
   border: none;
   background: #f3f6fc;
   color: #7c8494;
@@ -133,11 +178,7 @@ body {
   transition: color 0.15s, border-color 0.15s, background 0.15s;
 }
 .tab-btn:hover { background: #eef3ff; color: #202636; }
-.tab-btn.active {
-  background: #fff;
-  color: #202636;
-  font-weight: 600;
-}
+.tab-btn.active { background: #fff; color: #202636; font-weight: 600; }
 
 /* ── Cards scroll area ──────────────────────────────────────── */
 .tabs-body {
@@ -149,23 +190,20 @@ body {
 .tabs-body::-webkit-scrollbar-thumb { background: #c0cad8; border-radius: 3px; }
 
 /* ── Template card ──────────────────────────────────────────── */
-/* Карточка кликабельна целиком — кнопки Insert больше нет */
 .card {
   background: #fff;
   border: 1px solid #dae0ea;
   border-radius: 6px;
-  padding: 10px 12px;        /* убран нижний отступ под кнопку */
+  padding: 10px 12px;
   margin-bottom: 8px;
   cursor: pointer;
-  position: relative;
   transition: background 0.12s;
-  user-select: none;          /* текст не выделяется при клике */
+  user-select: none;
 }
 .card:hover { background: #eef3ff; }
 
-/* Текст шаблона. Было: 12.5px → стало: 14.5px */
 .card-text {
-  font-size: 14.5px;
+  font-size: 0.97em;    /* масштабируется вместе с body */
   line-height: 1.55;
   color: #202636;
 }
@@ -174,14 +212,14 @@ body {
 .empty-msg {
   color: #a0aab8;
   font-style: italic;
-  font-size: 13px;            /* было 12px */
+  font-size: 0.87em;
   padding: 16px 8px;
 }
 
 /* ── Status bar ─────────────────────────────────────────────── */
 .status-bar {
   padding: 5px 14px;
-  font-size: 12px;            /* было 11px */
+  font-size: 0.8em;     /* масштабируется вместе с body */
   color: #7c8494;
   background: #eef1f8;
   border-top: 1px solid #dae0ea;
