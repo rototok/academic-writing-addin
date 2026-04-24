@@ -11,7 +11,7 @@
   <DefaultLocale>en-US</DefaultLocale>
 
   <DisplayName DefaultValue="Academic Writing Assistant"/>
-  <Description DefaultValue="IMRD sentence template library for academic writing"/>
+  <Description DefaultValue="IMRAD sentence template library for academic writing"/>
 
   <IconUrl DefaultValue="https://rototok.github.io/academic-writing-addin/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://rototok.github.io/academic-writing-addin/assets/icon-64.png"/>
